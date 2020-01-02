@@ -1,0 +1,11 @@
+{
+  "name": "angrybytes-ui",
+  "theme": "ui",
+  "version": "0.1.0",
+  "description": "AngryBytes UI theme for Atom",
+  "license": "MIT",
+  "repository": "https://github.com/LANcaster83/angry-bytes-theme",
+  "engines": {
+    "atom": ">1.13.0"
+  }
+}

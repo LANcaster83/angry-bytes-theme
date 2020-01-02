@@ -1,0 +1,307 @@
+@import "syntax-variables";
+
+atom-text-editor, atom-text-editor .gutter {
+  background-color: @background;
+  color: @foreground;
+}
+
+atom-text-editor.is-focused .cursor {
+  border-color: @foreground;
+}
+
+atom-text-editor.is-focused .selection .region {
+  background-color: @selection;
+}
+
+atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-editor.is-focused .line.cursor-line {
+  background-color: @bright-black;
+}
+
+atom-text-editor .invisible-character {
+  color: @selection-text;
+}
+
+atom-text-editor .indent-guide {
+  box-shadow: inset 1px 0 darken(@bright-black, 13%);
+}
+
+atom-text-editor .gutter .line-number.git-line-modified,
+atom-text-editor .gutter .line-number.git-line-removed,
+atom-text-editor .gutter .line-number.git-line-added {
+  border-left-width: 5px;
+  padding-left: calc(0.5em - 5px);
+}
+
+.markdown-preview > atom-text-editor {
+  background: @black;
+  border: 1px solid @black;
+}
+
+.markdown-preview atom-text-editor {
+  color: @black;
+}
+
+.wrap-guide {
+  background-color: @blue;
+}
+
+.syntax--comment {
+  color: @blue;
+}
+
+.syntax--string {
+  color: @yellow;
+}
+
+.syntax--constant.syntax--numeric {
+  color: @magenta;
+}
+
+.syntax--constant.syntax--language {
+  color: @magenta;
+}
+
+.syntax--constant.syntax--character, .syntax--constant.syntax--other {
+  color: @magenta;
+}
+
+.syntax--variable {
+  color: @cyan;
+}
+
+.syntax--variable.syntax--other.syntax--readwrite.syntax--instance {
+  color: @bright-red;
+}
+
+.syntax--constant.syntax--character.syntax--escaped, .syntax--constant.syntax--character.syntax--escape, .syntax--string .syntax--source, .syntax--string .syntax--source.syntax--ruby {
+  color: @bright-magenta;
+}
+
+.syntax--keyword {
+  color: @bright-magenta;
+}
+
+.syntax--storage {
+  color: @bright-magenta;
+}
+
+.syntax--storage.syntax--type {
+  font-style: italic;
+  color: @cyan;
+}
+
+.syntax--entity.syntax--name.syntax--class {
+  text-decoration: underline;
+  color: @green;
+}
+
+.syntax--entity.syntax--other.syntax--inherited-class {
+  font-style: italic;
+  text-decoration: underline;
+  color: @green;
+}
+
+.syntax--entity.syntax--name.syntax--function {
+  color: @green;
+}
+
+.syntax--variable.syntax--parameter {
+  font-style: italic;
+  color: @bright-red;
+}
+
+.syntax--entity.syntax--name.syntax--tag {
+  color: @bright-magenta;
+}
+
+.syntax--entity.syntax--other.syntax--attribute-name {
+  color: @green;
+}
+
+.syntax--support.syntax--function {
+  color: @cyan;
+}
+
+.syntax--support.syntax--constant {
+  color: darken(@cyan, 6%);
+}
+
+.syntax--support.syntax--type, .syntax--support.syntax--class {
+  font-style: italic;
+  color: @bright-cyan;
+}
+
+.syntax--support.syntax--other.syntax--variable {
+}
+
+.syntax--invalid {
+  color: @selection-text;
+  background-color: @bright-magenta;
+}
+
+.syntax--invalid.syntax--deprecated {
+  color: @selection-text;
+  background-color: @magenta;
+}
+
+.syntax--meta.syntax--structure.syntax--dictionary.syntax--json .syntax--string.syntax--quoted.syntax--double.syntax--json {
+  color: @bright-yellow;
+}
+
+.syntax--meta.syntax--diff, .syntax--meta.syntax--diff.syntax--header {
+  color: @blue;
+}
+
+.syntax--markup.syntax--deleted {
+  color: @bright-magenta;
+}
+
+.syntax--markup.syntax--inserted {
+  color: @green;
+}
+
+.syntax--markup.syntax--changed {
+  color: @yellow;
+}
+
+.syntax--constant.syntax--numeric.line-number.syntax--find-in-files:not(.match) {
+  color: @magenta;
+}
+
+.syntax--entity.syntax--name.syntax--filename {
+  color: @yellow;
+}
+
+.syntax--message.syntax--error {
+  color: #F83333;
+}
+
+.syntax--punctuation.syntax--definition.syntax--string.syntax--begin.syntax--json:not(.syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json), .syntax--punctuation.syntax--definition.syntax--string.syntax--end.syntax--json:not(.syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json) {
+  color: darken(@white, 7%);
+}
+
+.syntax--meta.syntax--structure.syntax--dictionary.syntax--json .syntax--string.syntax--quoted.syntax--double.syntax--json {
+  color: @cyan;
+}
+
+.syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json .syntax--string.syntax--quoted.syntax--double.syntax--json {
+  color: @yellow;
+}
+
+.syntax--meta .syntax--meta .syntax--meta .syntax--meta .syntax--meta .syntax--meta .syntax--meta.syntax--structure.syntax--dictionary.syntax--value .syntax--string {
+  color: @green;
+}
+
+.syntax--meta .syntax--meta .syntax--meta .syntax--meta .syntax--meta .syntax--meta.syntax--structure.syntax--dictionary.syntax--value .syntax--string {
+  color: @bright-red;
+}
+
+.syntax--meta .syntax--meta .syntax--meta .syntax--meta .syntax--meta.syntax--structure.syntax--dictionary.syntax--value .syntax--string {
+  color: @bright-magenta;
+}
+
+.syntax--meta .syntax--meta .syntax--meta .syntax--meta.syntax--structure.syntax--dictionary.syntax--value .syntax--string {
+  color: @magenta;
+}
+
+.syntax--meta .syntax--meta .syntax--meta.syntax--structure.syntax--dictionary.syntax--value .syntax--string {
+  color: @green;
+}
+
+.syntax--meta .syntax--meta.syntax--structure.syntax--dictionary.syntax--value .syntax--string {
+  color: @bright-red;
+}
+
+.syntax--heading.syntax--gfm {
+  color: @magenta;
+}
+
+.syntax--entity.syntax--gfm {
+  color: @bright-magenta;
+}
+
+.syntax--markup.syntax--underline.syntax--link.syntax--gfm {
+  color: @cyan;
+}
+
+.syntax--variable.syntax--unordered.syntax--list.syntax--gfm {
+  color: @cyan;
+}
+
+.syntax--variable.syntax--ordered.syntax--list.syntax--gfm {
+  color: @cyan;
+}
+
+.syntax--variable.syntax--other.syntax--normal.syntax--shell {
+  color:@magenta;
+}
+
+.syntax--markup.syntax--bold.syntax--gfm {
+  color: @bright-red;
+}
+
+.syntax--markup.syntax--italic.syntax--gfm {
+  color: @yellow;
+}
+
+.syntax--markup.syntax--strike.syntax--gfm {
+  color: @red;
+}
+
+.syntax--markup.syntax--raw.syntax--gfm {
+  color: @green;
+}
+
+.syntax--code.syntax--gfm {
+  color: @green;
+}
+
+.syntax--code.syntax--gfm .syntax--link {
+    color: @cyan;
+}
+
+.syntax--critic.syntax--gfm.syntax--addition {
+  color: @green;
+}
+
+.syntax--critic.syntax--gfm.syntax--deletion {
+  color: @red;
+}
+
+.syntax--critic.syntax--gfm.syntax--substitution {
+  color:  @bright-red;
+}
+
+.syntax--critic.syntax--gfm.syntax--highlight {
+  color: @bright-magenta;
+}
+
+.syntax--critic.syntax--gfm.syntax--comment {
+  color: @blue;
+}
+
+[data-zen="true"] atom-pane-container atom-pane .item-views {
+  background: @black !important;
+}
+
+atom-text-editor .highlight.find-result .region {
+  background: lighten(@bright-black, 3%);
+  z-index: -1000;
+}
+
+atom-text-editor .highlight.current-result .region,
+atom-text-editor .highlight.current-result ~ .highlight.selection .region {
+  background: lighten(@bright-black, 20%); // to distinguish from the other results
+  z-index: -1000;
+}
+
+atom-text-editor .bracket-matcher .region {
+  border-bottom: 1px dotted @green;
+  z-index: 100;
+}
+
+// Highlights #{} in ruby string interpolation and <?php ?> syntax tag
+.syntax--punctuation.syntax--section.syntax--embedded.syntax--begin,
+.syntax--punctuation.syntax--section.syntax--embedded.syntax--end {
+  color: @bright-red;
+}

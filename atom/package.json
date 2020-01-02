@@ -1,0 +1,11 @@
+{
+  "name": "angrybytes-syntax",
+  "theme": "syntax",
+  "version": "0.1.0",
+  "description": "A dark syntax theme for Atom",
+  "repository": "https://github.com/LANcaster83/angry-bytes-theme/atom",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.13.0 <2.0.0"
+  }
+}
